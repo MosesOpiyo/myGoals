@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Goal } from './goal';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = ['My goals']
-  goals: string[]
+  goals: Goal[]=[
+    {id:1,name:'watch tv'},
+    {id:2,name:'buy a new phone'},
+    {id:3,name:'get a new watch'}
+  ]
 
   constructor () {
-    this.goals = ['Watch Tv','buy a new phone','get a new watch']
+    this.goals = []
   }
 }
