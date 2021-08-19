@@ -1,7 +1,9 @@
 <div>
     <h1>These are {{title}}</h1>
     <hr>
-    <li *ngFor='let goal of goals'>
+    <li *ngFor='let goal of goals;let i = index'>
         {{goal.name}}
+        <app-goal-detail *ngIf='showDescription' [goal]='goal'></app-goal-detail>
     </li>
+    <button (clicked)='toggleDetails(i)'>Details</button>
 </div>

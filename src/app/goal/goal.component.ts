@@ -9,9 +9,9 @@ import { Goal } from '../goal';
 export class GoalComponent implements OnInit {
   title = 'My Goals'
    goals:Goal[]=[
-    {id:1,name:'watch tv',description:'lots and lots of TV'},
-    {id:2,name:'buy a new phone',description:'Dont know wich one though'},
-    {id:3,name:'get a new watch',description:'options of a rolex or patek'}
+    new Goal(1,'watch tv','lots of tv'),
+    new Goal(2,'buy a new phone','samsung or Iphone'),
+    new Goal(3,'get a new watch','a rolex or a patek')
    ]
 
   constructor() { }
