@@ -20,7 +20,7 @@ export class GoalComponent implements OnInit {
     toggleDetails(index){
       this.goals[index].showDescription = !this.goals[index].showDescription;
     }
-    completeGoal(isComplete: any, index: number) {
+    completeGoal(isComplete, index) {
       if (isComplete) {
         this.goals.splice(index,1);
       }
